@@ -34,6 +34,7 @@ var Joi = require('joi'),
 exports.classification = {
   handler: function (request, reply) {
     var post_data = querystring.stringify(request.payload);
+    console.log(request.path);
     var options = {
       host: Config.host.classificationAttribute,
       path: request.path,
