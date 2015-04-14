@@ -6,35 +6,15 @@ var Joi = require('joi'),
     querystring = require('querystring'),
     Config = require('../config/config');
 
-//  var options = {
-//       host: 'classificationattribute-44842.onmodulus.net',
-//       path: '/classification/551a3619b37d9294079a39bd'
-//     };
-
-// exports.getGoogle = {
-//   handler: function (request, reply) {
-//     console.log("Hi!----------------------------");
-
-//     http.get(options, function(res) {
-//       console.log("Got response: " + res.statusCode);
-//       return reply(res);
-//     }).on('error', function(e) {
-//       console.log("Got error: " + e.message);
-//     });
-//   }
-// };
-
-// var options = {
-//       host: 'classificationattribute-44842.onmodulus.net',
-//       path: 'api/classificationSearch'
-//     };
-
-
+exports.getClassificationAttributeHost = {
+  handler: function (request, reply) {
+      return reply(Config.host.classificationAttribute);
+  }
+};
 
 exports.classification = {
   handler: function (request, reply) {
     var post_data = querystring.stringify(request.payload);
-    console.log(request.path);
     var options = {
       host: Config.host.classificationAttribute,
       path: request.path,
