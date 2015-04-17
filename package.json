@@ -2,7 +2,6 @@
   "name": "jwt-auth-poc",
   "description": "Hapijs JWT POC",
   "version": "0.1.0",
-  "main": "server",
   "engines": {
     "node": ">=0.10.22"
   },

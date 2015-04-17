@@ -12,7 +12,7 @@ exports.getClassificationAttributeHost = {
   }
 };
 
-exports.classification = {
+exports.classificationPOST = {
   handler: function (request, reply) {
     var post_data = querystring.stringify(request.payload);
     var options = {
@@ -40,5 +40,24 @@ exports.classification = {
 };
 
 
+exports.classificationGET = {
+  handler: function (request, reply) {
+    console.log(request.path);
+    var options = {
+      host: Config.host.classificationAttribute,
+      path: request.path,
+      method: 'GET'
+    };
 
+    var req = http.request(options, function(res) {
+      return reply(res);
+    });
+
+    req.on('error', function(e) {
+      console.log('problem with request: ' + e.message);
+    });
+    
+    req.end();
+  }
+};
 
