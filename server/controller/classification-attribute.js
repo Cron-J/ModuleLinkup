@@ -42,7 +42,6 @@ exports.classificationPOST = {
 
 exports.classificationGET = {
   handler: function (request, reply) {
-    console.log(request.path);
     var options = {
       host: Config.host.classificationAttribute,
       path: request.path,
