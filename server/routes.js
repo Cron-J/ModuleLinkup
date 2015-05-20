@@ -11,7 +11,7 @@ exports.endpoints = [
   { method: 'GET',  path: '/getClassificationAttributeHost', config: ClassificationAttribute.getClassificationAttributeHost },
   { method: 'POST', path: '/api/classificationSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/classificationGroupSearch', config: ClassificationAttribute.classificationPOST},
-  { method: 'POST', path: '/getSchema', config: Product.ProductGET},
+  { method: 'GET', path: '/getSchema', config: Product.ProductGET},
   { method: 'POST', path: '/api/attributeSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/attributeSectionSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/attributeList', config: ClassificationAttribute.classificationPOST},
