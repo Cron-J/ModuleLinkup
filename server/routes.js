@@ -12,6 +12,7 @@ exports.endpoints = [
   { method: 'POST', path: '/api/classificationSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/classificationGroupSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'GET', path: '/getProductSchema', config: Product.ProductGET},
+  { method: 'GET', path: '/getSynonyms', config: Product.ProductGET},
   { method: 'POST', path: '/api/attributeSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/attributeSectionSearch', config: ClassificationAttribute.classificationPOST},
   { method: 'POST', path: '/api/attributeList', config: ClassificationAttribute.classificationPOST},
