@@ -7,6 +7,7 @@ module.exports = {
   },
   host: {
   	classificationAttribute: 'classificationattribute-44842.onmodulus.net',
-  	producteditor: 'producteditor-46898.onmodulus.net'
+  	producteditor: 'producteditor-46898.onmodulus.net',
+  	synonym: 'synonyms-47818.onmodulus.net'
   }
 };
